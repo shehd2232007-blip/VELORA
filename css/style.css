@@ -1,0 +1,387 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7f4;
+    color: #222;
+    text-align: center;
+}
+
+.header {
+    padding: 25px;
+    background: #1f1f1f;
+    color: white;
+}
+
+.header h1 {
+    letter-spacing: 5px;
+}
+
+.header p {
+    color: #d6c7b2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: white;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar .active {
+    color: #a47c5b;
+}
+
+.featured {
+    padding: 40px 8%;
+}
+.featured h2 {
+    margin-bottom: 25px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+}
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.product-card img:hover{
+    transform: scale(1.08);
+}
+.product-card h3 {
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    color: #a47c5b;
+    font-weight: bold;
+}
+.offer {
+    margin: 0 8% 35px;
+    padding: 22px;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+}
+.footer {
+    padding: 18px;
+    background: #111;
+    color: #ccc;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 6%;
+    background: #f3eee8;
+}
+.hero-slider {
+    width:70%;
+}
+.hero-text {
+    width: 30%;
+    text-align: left;
+}
+.hero-text p {
+    margin-bottom: 18px;
+    color: #a47c5b;}
+
+.shop-btn {
+    padding: 10px 22px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.about {
+    padding: 50px 15%;
+}
+
+.about p {
+    margin-top: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+.about p.about-tagline{
+    margin:0;
+    color: #a47c5b;
+    font-weight: bold;
+}
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 0 8% 50px;
+}
+.features div {
+    flex: 1;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+}
+.features p {
+    margin-top: 8px;
+    color: #666;
+}
+
+.about-list{
+    width: fit-content;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.products-title {
+    padding: 40px 0 20px;
+}
+
+.products-title p {
+    color: #666;
+}
+
+.section-title {
+    margin: 25px 0 20px;
+    color: #a47c5b;
+}
+.container .product-card {
+    height: 100%;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+.container .product-card:hover {
+    transform: translateY(-5px);
+}
+.container .product-card img {
+    height: 220px;
+    object-fit: cover;
+}
+.details-btn {
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 4px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+.modal-box {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    z-index: 1000;
+}
+.modal-content {
+    width: 90%;
+    max-width: 450px;
+    margin: 12% auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    position: relative;
+}
+.close-modal {
+    position: absolute;
+    top:12px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.size-table{
+    width: 100%;
+    margin-bottom: 20px;
+
+}.size-table th,.size-table td{
+    border: 2px;
+    border-style: solid;
+   
+}
+.contact {
+    display: flex;
+    gap: 50px;
+    padding: 60px 12%;
+    text-align: left;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    color: #666;
+}
+
+.contact-info i {
+    width: 40px;
+    color: #a47c5b;
+}
+.input-box {
+    position: relative;
+}
+
+.input-box i {
+     position: absolute;
+    left: 12px;
+    top: 14px; 
+    color: #a47c5b;
+}
+.contact-form input,
+.contact-form textarea {
+    outline: none;
+    width: 100%;
+    padding: 12px 12px 12px 38px;
+    margin-bottom: 12px;
+    border: 1px solid #a47c5b;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+.contact-form button {
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero-slider,.hero-text{
+        width: 100%;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .features {
+    flex-direction: column;
+    }
+    }
+
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+.account-page {
+    padding: 45px 10%;
+}
+
+.account-title {
+    margin-bottom: 30px;
+}
+
+.account-title p,
+.account-box > p {
+    margin-top: 8px;
+    color: #a47c5b;
+}
+
+.account {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.account-box {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0002;
+    text-align:left;
+}
+
+.account-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.account-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.account-box input:focus {
+    outline: none;
+    border-color: #a47c5b;
+}
+
+.account-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.account-box button:hover {
+    background: #a47c5b;
+}
+
+.forgot {
+    display: block;
+    margin-top: 10px;
+    color: #a47c5b;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .account {
+        flex-direction: column;
+    }
+    .account-box {
+        width: 100%;
+    }
+}
